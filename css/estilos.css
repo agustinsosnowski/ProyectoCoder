@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contactoBody {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Contacto1 Contacto1 Contacto1"
+      "Contacto1 Contacto1 Contacto1"
+      "Contacto2 Contacto2 Contacto2"
+      "Contacto2 Contacto2 Contacto2"
+      "Contacto3 Contacto3 Contacto3"
+      "Contacto3 Contacto3 Contacto3";
+  }
+  
+  .Contacto1 { grid-area: Contacto1; background-color: rgb(162, 196, 230);height: 300px;}
+  
+  .Contacto2 { grid-area: Contacto2; background-color: rgb(212, 137, 137);height: 300px;}
+  
+  .Contacto3 { grid-area: Contacto3;background-color: rgb(194, 238, 128);height: 300px; }
+  
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Header Header Header"
+      "Item1 Item1 Item1 Item1"
+      "Item1 Item1 Item1 Item1"
+      "Item2 Item2 Item2 Item2"
+      "Item2 Item2 Item2 Item2"
+      "Item3 Item3 Item3 Item3"
+      "Item3 Item3 Item3 Item3"
+      "Footer Footer Footer Footer";
+  }
+  
+  .Header { grid-area: Header;
+background-color: rgb(228, 171, 156);}
+  
+  .Item1 { grid-area: Item1;background-color: rgb(230, 64, 64); height: 200px; }
+  
+  .Item2 { grid-area: Item2;background-color: rgb(173, 218, 230);height: 200px; }
+  
+  .Item3 { grid-area: Item3; background-color: rgb(247, 232, 149);}
+  
+  .Footer { grid-area: Footer; background-color: rgb(104, 236, 104);}
+
+  @media (min-width: 768px) {
+    .contactoBody {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . . ."
+          "Contacto1 Contacto1 Contacto2 Contacto2"
+          "Contacto1 Contacto1 Contacto2 Contacto2"
+          ". Contacto3 Contacto3 ."
+          ". Contacto3 Contacto3 ."
+          ". . . .";
+      }
+      
+      .Contacto1 { grid-area: Contacto1; background-color: rgb(162, 196, 230);height: 300px;}
+  
+      .Contacto2 { grid-area: Contacto2; background-color: rgb(212, 137, 137);height: 300px;}
+      
+      .Contacto3 { grid-area: Contacto3;background-color: rgb(194, 238, 128);height: 300px; }
+      
+        
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Header Header Header Header"
+          "Item1 Item1 Item2 Item2"
+          "Item1 Item1 Item2 Item2"
+          "Item1 Item1 Item2 Item2"
+          ". Item3 Item3 ."
+          ". Item3 Item3 ."
+          ". Item3 Item3 ."
+          "Footer Footer Footer Footer";
+      }
+      
+      .Header { grid-area: Header; }
+      
+      .Footer { grid-area: Footer; }
+      
+      .Item1 { grid-area: Item1;height: 300px; }
+      
+      .Item2 { grid-area: Item2;height: 300px }
+      
+      .Item3 { grid-area: Item3;height: 300px }
+      
+  }
+  @media (min-width: 1024px) {
+    .contactoBody {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Contacto1 Contacto1 Contacto2 Contacto2 Contacto3 Contacto3"
+          "Contacto1 Contacto1 Contacto2 Contacto2 Contacto3 Contacto3"
+          "Contacto1 Contacto1 Contacto2 Contacto2 Contacto3 Contacto3";
+      }
+      
+      .Contacto1 { grid-area: Contacto1; background-color: rgb(162, 196, 230);height: 600px;}
+  
+      .Contacto2 { grid-area: Contacto2; background-color: rgb(212, 137, 137);height: 600px;}
+      
+      .Contacto3 { grid-area: Contacto3;background-color: rgb(194, 238, 128);height: 600px; }
+
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Header Header Header Header Header Header"
+          "Item1 Item1 Item2 Item2 Item3 Item3"
+          "Item1 Item1 Item2 Item2 Item3 Item3"
+          "Item1 Item1 Item2 Item2 Item3 Item3"
+          "Item1 Item1 Item2 Item2 Item3 Item3"
+          "Footer Footer Footer Footer Footer Footer";
+      }
+      
+      .Header { grid-area: Header; }
+      
+      .Item1 { grid-area: Item1;height: 600px; }
+      
+      .Item2 { grid-area: Item2;height: 600px }
+      
+      .Item3 { grid-area: Item3;height: 600px }
+      
+      .Footer { grid-area: Footer; }
+      
+  }
+
